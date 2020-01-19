@@ -7,9 +7,26 @@
 } */
 
 #intro-text {
+	/* opacity: 0; /* make things invisible upon start */
+	-webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
+	animation-duration: .5s;
+
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	animation-delay: 2s;
 }
 
 .landing-text {
+	margin-top: 50%;
 	color: white;
 	position: initial;
 }
@@ -83,7 +100,12 @@
 	animation-delay: 0.7s;
 }
 
-.fade-in-box {
+#fade-in-box {
+	margin-top: 42%;
+	margin-left: 34%;
+	top: 50%;
+	background-color: #e0e8e1;
+
 	opacity: 0; /* make things invisible upon start */
 	-webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
 	-moz-animation: fadeIn ease-in 1;
@@ -100,4 +122,9 @@
 	-webkit-animation-delay: 2s;
 	-moz-animation-delay: 2s;
 	animation-delay: 2s;
+}
+
+#landing-button {
+	background-color: HSL(75, 76%, 19%);
+	opacity: 0.8;
 }
