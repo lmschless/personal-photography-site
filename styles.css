@@ -2,9 +2,76 @@
 	height: 40em;
 } */
 
+.jumbotron {
+}
+
+#test {
+	max-width: 60%;
+	margin-top: 50%;
+	margin-left: 30%;
+	position: absolute;
+	opacity: .8;
+	padding-top: 1;
+	padding-left: 1;
+	border-style: groove;
+}
+
 .nav {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 
 	padding: 0;
+}
+
+#bg {
+	height: 100%;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-height: 100%;
+	background-image: url("https://images.unsplash.com/photo-1578251123271-60214d50dcb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80");
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in-image {
+	opacity: 0; /* make things invisible upon start */
+	-webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s;
 }
