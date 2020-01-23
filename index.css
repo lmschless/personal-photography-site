@@ -1,6 +1,21 @@
+html {
+	overflow-x: hidden;
+}
+
 .test {
 	margin-right: 0px;
 	margin-left: 0px;
 	padding-right: 0px;
 	padding-left: 0px;
+}
+
+#title-area {
+	background: url(https://live.staticflickr.com/65535/49094060877_4ed8806703_k.jpg) no-repeat;
+	padding-left: 0;
+	float: none;
+	/* overflow: visible; */
+	background-size: cover;
+	/* back-ground-attachment allows for the image to stay stationary
+			while scrolling */
+	background-attachment: fixed;
 }
