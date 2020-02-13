@@ -3,19 +3,24 @@ html {
 	overflow-x: hidden;
 }
 
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
 .wrapper > div {
 	padding: 1em;
 }
 
 .wrapper {
-	grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+	grid-template-columns: repeat(auto-fill, minmax(400px, auto));
 	display: grid;
 	/* grid-template-columns: 1fr 2fr 1fr; */
-	/* grid-template-rows: minmax(auto, 1000px); */
+	grid-template-rows: minmax(auto, 3fr);
 	/* grid-auto-rows: minmax(300px, auto); */
 	/* align-items: stretch; */
 
-	grid-column-gap: .5em;
+	/* grid-column-gap: .5em; */
 }
 
 .test {
@@ -35,15 +40,15 @@ html {
 	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 	max-width: 100%;
 }
-#title-area {
-	background: url(https://live.staticflickr.com/65535/49094060877_4ed8806703_k.jpg) no-repeat;
-	padding-left: 0;
-	float: none;
+.hero {
+	position: relative;
+	background: url(https://live.staticflickr.com/65535/49094060877_4ed8806703_k.jpg) no-repeat center center fixed;
 	/* overflow: visible; */
 	background-size: cover;
+	min-height: 60em;
 	/* back-ground-attachment allows for the image to stay stationary
 			while scrolling */
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 }
 
 .hidden {
