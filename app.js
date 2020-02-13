@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(document).scroll(function() {
+	setTimeout(function() {
 		$('.hidden').removeClass('hidden');
-	});
+	}, 300);
 });
