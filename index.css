@@ -1,5 +1,21 @@
 html {
+	height: 100%;
 	overflow-x: hidden;
+}
+
+.wrapper > div {
+	padding: 1em;
+}
+
+.wrapper {
+	grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+	display: grid;
+	/* grid-template-columns: 1fr 2fr 1fr; */
+	/* grid-template-rows: minmax(auto, 1000px); */
+	/* grid-auto-rows: minmax(300px, auto); */
+	/* align-items: stretch; */
+
+	grid-column-gap: .5em;
 }
 
 .test {
@@ -14,6 +30,11 @@ html {
 	margin: 2em 0;
 }
 
+.wrapper img {
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	max-width: 100%;
+}
 #title-area {
 	background: url(https://live.staticflickr.com/65535/49094060877_4ed8806703_k.jpg) no-repeat;
 	padding-left: 0;
