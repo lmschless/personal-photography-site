@@ -13,9 +13,11 @@ body {
 }
 
 .wrapper {
+	/* auto created columns when needed based on screen size */
 	grid-template-columns: repeat(auto-fill, minmax(400px, auto));
 	display: grid;
 	/* grid-template-columns: 1fr 2fr 1fr; */
+	/* auto created rows when needed based on screen size */
 	grid-template-rows: minmax(auto, 3fr);
 	/* grid-auto-rows: minmax(300px, auto); */
 	/* align-items: stretch; */
@@ -45,7 +47,8 @@ body {
 	background: url(https://live.staticflickr.com/65535/49094060877_4ed8806703_k.jpg) no-repeat center center fixed;
 	/* overflow: visible; */
 	background-size: cover;
-	min-height: 60em;
+	/* min-height: 60em; */
+	min-height: 100vh;
 	/* back-ground-attachment allows for the image to stay stationary
 			while scrolling */
 	/* background-attachment: fixed; */
